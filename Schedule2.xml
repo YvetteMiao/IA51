@@ -6,7 +6,7 @@
       <start_time>900</start_time>
       <duration>20</duration>
       <destination_name>swimming_pool</destination_name>
-      <type>private_car</type>
+      <type>tm_car</type>
     </Trip>
     <Activity id="1">
       <start_time>920</start_time>
@@ -21,7 +21,7 @@
       <start_time>1030</start_time>
       <duration>0</duration>
       <destination_name>swimming_pool</destination_name>="swimming_pool">
-      <type>private_car</type>
+      <type>tm_car</type>
     </Trip>
   </Episode>
 
