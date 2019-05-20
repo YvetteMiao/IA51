@@ -47,7 +47,7 @@ class ReadXml{
 				// Traversing all attributes of Episode
 				 for(int j = 0; j < attrs_episode.getLength(); j++) {
 					 Node attr_episode = attrs_episode.item(j);
-					 System.out.print("The name of attribute: " + attr_episode.getNodeName()+"\n");
+						 System.out.print("The name of attribute: " + attr_episode.getNodeName()+"\n");
 					 System.out.println("The value of attribute: " + attr_episode.getNodeValue()+"\n");
 				 }
 				 
@@ -89,14 +89,15 @@ class ReadXml{
 						        	Location origin_name = new Location(childNodes_trip.item(n).getFirstChild().getNodeValue());
 						        	trip_cur. origin_name = origin_name;break;
 						        case 4:
-						            trip_cur.start_time = Integer.parseInt(childNodes_trip.item(n).getFirstChild().getNodeValue()); break;
+						            	trip_cur.start_time = Integer.parseInt(childNodes_trip.item(n).getFirstChild().getNodeValue()); break;
 						        case 6:
 						        	trip_cur.duration = Integer.parseInt(childNodes_trip.item(n).getFirstChild().getNodeValue());break;
 						        case 8:
 						        	Location destination = new Location(childNodes_trip.item(n).getFirstChild().getNodeValue());
 						        	trip_cur.destination = destination;break;
 						        case 10:
-						        	
+								
+						        	trip_cur.mode = mode;break;
 						        }
 
 							 
