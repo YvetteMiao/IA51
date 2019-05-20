@@ -22,7 +22,7 @@
       <start_time>820</start_time>
       <duration>20</duration>
       <destination_name>school</destination_name>
-      <mode>private_car</mode>
+      <mode>tm_car</mode>
     </Trip>
   </Episode>
   <Episode id="4">
@@ -31,7 +31,7 @@
       <start_time>840</start_time>
       <duration>20</duration>
       <destination_name>company</destination_name>
-      <mode>private_car</mode>
+      <mode>tm_car</mode>
     </Trip>
     <Activity id="4">
       <start_time>900</start_time>
@@ -62,7 +62,7 @@
       <start_time>1800</start_time>
       <duration>25</duration>
       <destination_name>resto</destination_name>
-      <type>private_car</type>
+      <type>tm_car</type>
     </Trip>
     <Activity id="7">
       <start_time>1825</start_time>
@@ -77,7 +77,7 @@
       <start_time>2000</start_time>
       <duration>15</duration>
       <destination_name>bar</destination_name>
-      <mode>walk</mode>
+      <mode>tm_slow</mode>
     </Trip>
     <Activity id="8">
       <start_time>2015</start_time>
@@ -92,7 +92,7 @@
       <start_time>2200</start_time>
       <duration>30</duration>
       <destination_name>home</destination_name>
-      <mode>private_car</mode>
+      <mode>tm_car</mode>
     </Trip>
   </Episode>
 </Schedule>
