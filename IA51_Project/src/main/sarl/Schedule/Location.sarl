@@ -3,8 +3,6 @@
  */
 package Schedule
 
-import java.util.Date
-
 /** 
  * @author 15800
  * 
@@ -13,7 +11,9 @@ class Location extends Object {
 	public var name : String
 	public var open_time : int
 	public var close_time : int
-	
+	public var quality :double
+	public var perception : double
+		
 	new(name : String){
 		this.name = name
 	}

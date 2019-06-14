@@ -10,7 +10,7 @@ import org.eclipse.xtext.xbase.lib.Pure;
 /**
  * @author 15800
  */
-@SarlSpecification("0.8")
+@SarlSpecification("0.9")
 @SarlElementType(10)
 @SuppressWarnings("all")
 public class Episode {
@@ -26,6 +26,9 @@ public class Episode {
   /**
    * constructor
    */
+  public Episode() {
+  }
+  
   public Episode(final int id) {
     this.id = id;
   }

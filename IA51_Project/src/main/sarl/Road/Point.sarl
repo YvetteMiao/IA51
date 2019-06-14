@@ -8,35 +8,35 @@ package Road
  * 
  */
 class Point extends Object {
-	var x: float
-	var y : float
+	var x: double
+	var y : double
 
-	new(x:float, y:float){
+	new(x:double, y:double){
 		this.x = x
 		this.y = y
 	}
-	def getX: float{
+	def getX: double{
 		return this.x
 	}
 
-	def getY : float {
+	def getY : double {
 		return this.y
 	}
 	
-	def setX(x:float){
+	def setX(x:double){
 		this.x = x
 	}
 
-	def setY(y : float) {
+	def setY(y : double) {
 		this.y = y
 	}
 	
-	def distanceToOrigine : float {
-		return Math.sqrt(Math.pow(this.x, 2) + Math.pow(this.y, 2)) as float
+	def distanceToOrigine : double {
+		return Math.sqrt(Math.pow(this.x, 2) + Math.pow(this.y, 2)) as double
 	}
 
-	def distanceToOther(point:Point):float {
-        return Math.sqrt(Math.pow(this.x-point.x, 2)+Math.pow(this.y-point.y, 2)) as float
+	def distanceToOther(point:Point):double {
+        return Math.sqrt(Math.pow(this.x-point.x, 2)+Math.pow(this.y-point.y, 2)) as double
 	}
 }
 

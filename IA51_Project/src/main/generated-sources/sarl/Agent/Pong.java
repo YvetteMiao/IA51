@@ -11,7 +11,7 @@ import org.eclipse.xtext.xbase.lib.util.ToStringBuilder;
 /**
  * @author 15800
  */
-@SarlSpecification("0.8")
+@SarlSpecification("0.9")
 @SarlElementType(15)
 @SuppressWarnings("all")
 public class Pong extends Event {
@@ -66,5 +66,5 @@ public class Pong extends Event {
   }
   
   @SyntheticMember
-  private final static long serialVersionUID = 386180958L;
+  private static final long serialVersionUID = 386180958L;
 }

@@ -43,8 +43,8 @@ import org.eclipse.xtext.xbase.lib.Pure;
 /**
  * @author 15800
  */
-@SarlSpecification("0.8")
-@SarlElementType(18)
+@SarlSpecification("0.9")
+@SarlElementType(19)
 @SuppressWarnings("all")
 public class MyAgent extends Agent {
   private void $behaviorUnit$Initialize$0(final Initialize occurrence) {

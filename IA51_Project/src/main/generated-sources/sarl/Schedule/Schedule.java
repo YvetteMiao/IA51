@@ -10,16 +10,19 @@ import org.eclipse.xtext.xbase.lib.Pure;
 /**
  * @author 15800
  */
-@SarlSpecification("0.8")
+@SarlSpecification("0.9")
 @SarlElementType(10)
 @SuppressWarnings("all")
 public class Schedule {
-  private Day_of_Week day;
+  public Day_of_Week day;
   
-  private Episode[] list;
+  public Episode[] episode_list;
+  
+  public Schedule() {
+  }
   
   public Schedule(final Episode[] l, final Day_of_Week day) {
-    this.list = l;
+    this.episode_list = l;
     this.day = day;
   }
   

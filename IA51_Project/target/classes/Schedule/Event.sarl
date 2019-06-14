@@ -1,0 +1,40 @@
+/** 
+ * 
+ */
+package Schedule
+import Road.*
+
+/** 
+ * @author 15800
+ * 
+ */
+class Event extends Object {
+
+	public var trip_or_activity : int //0 trip 1 activity
+	public var type_of_event : int // 0 1 2
+	public var time_event : int // the awareness time of the event
+	public var time_start: int // the start time of the event
+	public var affect_id : int // which episode will be affected by the event 
+	
+	
+	public var travel_new_mode : Transport_Mode // no change
+	public var path_non_congested : Path
+	public var delta_start_time_trip : int
+	public var delta_start_time_activity : int
+	public var delta_duration_time_activity : int
+	public var new_location : Location
+	
+	public var new_endtime_activity : int
+
+	/* constructor */
+	new() {}
+	new(trip_or_activity : int, type_of_event : int) {
+		this.trip_or_activity = trip_or_activity
+		this.type_of_event = type_of_event
+	}	
+	
+	
+	
+	
+}
+

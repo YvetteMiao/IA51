@@ -5,7 +5,7 @@ public enum Activity_Type {
 	at_work(1),
 	at_bringGet(3),
 	at_DailyShopping(4),
-	at_nonDailyShopping(5),
+	at_Education(5),
 	at_services(6),
 	at_socialVisit(7),
 	at_leisure(8),

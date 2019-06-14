@@ -6,8 +6,8 @@ class RoadTest {
 		var p1 = new Point(2, 4)
 		var p2 = new Point(6, 8)
 		var distance = p1.distanceToOther(p2)
-		var speed: float = 20
-		var time : float = distance / speed
+		var speed: double = 20
+		var time : double = distance / speed
 		System.out.println(time)
 	}
 	

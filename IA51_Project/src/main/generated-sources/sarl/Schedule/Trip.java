@@ -1,5 +1,6 @@
 package Schedule;
 
+import Road.Path;
 import Schedule.Location;
 import Schedule.Transport_Mode;
 import io.sarl.lang.annotation.SarlElementType;
@@ -10,7 +11,7 @@ import org.eclipse.xtext.xbase.lib.Pure;
 /**
  * @author 15800
  */
-@SarlSpecification("0.8")
+@SarlSpecification("0.9")
 @SarlElementType(10)
 @SuppressWarnings("all")
 public class Trip {
@@ -25,6 +26,8 @@ public class Trip {
   public Location destination;
   
   public Transport_Mode mode;
+  
+  public Path path;
   
   /**
    * constructor

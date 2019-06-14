@@ -9,7 +9,7 @@ import org.eclipse.xtext.xbase.lib.Pure;
 /**
  * @author 15800
  */
-@SarlSpecification("0.8")
+@SarlSpecification("0.9")
 @SarlElementType(10)
 @SuppressWarnings("all")
 public class Location {
@@ -18,6 +18,10 @@ public class Location {
   public int open_time;
   
   public int close_time;
+  
+  public double quality;
+  
+  public double perception;
   
   public Location(final String name) {
     this.name = name;
@@ -47,6 +51,10 @@ public class Location {
       return false;
     if (other.close_time != this.close_time)
       return false;
+    if (Double.doubleToLongBits(other.quality) != Double.doubleToLongBits(this.quality))
+      return false;
+    if (Double.doubleToLongBits(other.perception) != Double.doubleToLongBits(this.perception))
+      return false;
     return super.equals(obj);
   }
   
@@ -59,6 +67,8 @@ public class Location {
     result = prime * result + Objects.hashCode(this.name);
     result = prime * result + this.open_time;
     result = prime * result + this.close_time;
+    result = prime * result + (int) (Double.doubleToLongBits(this.quality) ^ (Double.doubleToLongBits(this.quality) >>> 32));
+    result = prime * result + (int) (Double.doubleToLongBits(this.perception) ^ (Double.doubleToLongBits(this.perception) >>> 32));
     return result;
   }
 }

@@ -15,7 +15,11 @@ class Activity extends Object {
 	public var duration : int
 	public var location : Location
 	public var type : Activity_Type
+	public var a: double
+	public var b :double
+	public var MinD :int
 	
+	new(){}
 	/* constructor */
 	new(id : int) {
 		this.id = id
@@ -23,15 +27,52 @@ class Activity extends Object {
 		this.duration = -1
 		this.location = null
 		this.type = null
+		this.MinD = -1
 	}
 	
-	new(id : int, st : int, d : int , l : Location, type:Activity_Type) {
+	new(id : int, st : int, d : int , l : Location,min:int, type:Activity_Type) {
 		this.id = id
 		this.start_time = st
 		this.duration = d
 		this.location = l	
 		this.type = type
+		this.MinD = min 
+		if (this.type.order == 1) {
+			a = -41.747 
+			b = 0.220
+		}
+		else if(this.type.order == 5){
+			a = -38.455 
+			b = 0.200 
+		}
+		else if(this.type.order == 7){
+			a = -10.107 
+			b = 0.135 
+		} 
+		else if (this.type.order == 3) {
+			a = -6.738 
+			b = 0.155
+		} 
+		else if (this.type.order == 4) {
+			a = -15.847 
+			b = 0.146 
+		}
+		else if (this.type.order == 8) {
+			a = -8.056 
+			b = 0.029 
+		} 
+		else if (this.type.order == 6) {
+			a = -5.829 
+			b = 0.089
+		} 
+		else if (this.type.order == 10) {
+			a = -4.663 
+			b = 0.070
+		}
 	}
+	
+	
+	
 	
 	
 

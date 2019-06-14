@@ -1,0 +1,18 @@
+/** 
+ * 
+ */
+package Road
+
+/** 
+ * @author 15800
+ * 
+ */
+class Path extends Object {
+	var path: Segment[]
+	new(){}
+	
+	new(p : Segment[] ) {
+		this.path = p
+	}
+	
+}

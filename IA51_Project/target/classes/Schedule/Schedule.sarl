@@ -11,11 +11,12 @@ import java.util.Date
  */
  
 class Schedule extends Object {
-	var day: Day_of_Week
-	var list: Episode[]
-
+	public var day: Day_of_Week
+	public var episode_list: Episode[]
+	
+	new(){}
 	new(l : Episode[], day : Day_of_Week) {
-		this.list = l
+		this.episode_list = l
 		this.day = day
 	}
 	

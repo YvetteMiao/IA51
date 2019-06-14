@@ -1,0 +1,23 @@
+/** 
+ * 
+ */
+package Road
+
+/** 
+ * @author 15800
+ * 
+ */
+class Segment extends Object {
+	
+	public var start : Point
+	public var end : Point
+	public var c : double // capacity
+	public var tf : double
+	public var flow : double
+
+	new(c : double, tf : double, flow : double) {
+		this.c = c
+		this.tf = tf
+		this.flow = flow
+	}
+}

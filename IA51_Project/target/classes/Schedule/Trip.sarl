@@ -4,6 +4,7 @@
 package Schedule
 
 import java.util.Date
+import Road.*
 
 /** 
  * @author 15800
@@ -16,7 +17,7 @@ class Trip extends Object {
 	public var duration : int
 	public var destination : Location
 	public var mode : Transport_Mode
-
+	public var path : Path
 	/* constructor */
 
 	new(id : int) {
