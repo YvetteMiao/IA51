@@ -14,6 +14,7 @@ class Segment extends Object {
 	public var c : double // capacity
 	public var tf : double
 	public var flow : double
+	public var distance : double
 
 	new(start: Point, end: Point, c : double, tf : double, flow : double) {
 		this.start = start
@@ -21,5 +22,13 @@ class Segment extends Object {
 		this.c = c
 		this.tf = tf
 		this.flow = flow
+		this.distance = Math.sqrt((this.start.x - this.end.x) * (this.start.x - this.end.x) +
+			(this.start.y - this.end.y) * (this.start.y - this.end.y))
+	}
+	
+	def calculate_tf(speed : double){
+		this.tf = this.distance / speed
 	}
 }
+
+

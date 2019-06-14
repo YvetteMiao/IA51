@@ -23,12 +23,28 @@ public class Segment {
   
   public double flow;
   
+  public double distance;
+  
   public Segment(final Point start, final Point end, final double c, final double tf, final double flow) {
     this.start = start;
     this.end = end;
     this.c = c;
     this.tf = tf;
     this.flow = flow;
+    double _x = this.start.getX();
+    double _x_1 = this.end.getX();
+    double _x_2 = this.start.getX();
+    double _x_3 = this.end.getX();
+    double _y = this.start.getY();
+    double _y_1 = this.end.getY();
+    double _y_2 = this.start.getY();
+    double _y_3 = this.end.getY();
+    this.distance = Math.sqrt((((_x - _x_1) * (_x_2 - _x_3)) + 
+      ((_y - _y_1) * (_y_2 - _y_3))));
+  }
+  
+  public void calculate_tf(final double speed) {
+    this.tf = (this.distance / speed);
   }
   
   @Override
@@ -48,6 +64,8 @@ public class Segment {
       return false;
     if (Double.doubleToLongBits(other.flow) != Double.doubleToLongBits(this.flow))
       return false;
+    if (Double.doubleToLongBits(other.distance) != Double.doubleToLongBits(this.distance))
+      return false;
     return super.equals(obj);
   }
   
@@ -60,6 +78,7 @@ public class Segment {
     result = prime * result + (int) (Double.doubleToLongBits(this.c) ^ (Double.doubleToLongBits(this.c) >>> 32));
     result = prime * result + (int) (Double.doubleToLongBits(this.tf) ^ (Double.doubleToLongBits(this.tf) >>> 32));
     result = prime * result + (int) (Double.doubleToLongBits(this.flow) ^ (Double.doubleToLongBits(this.flow) >>> 32));
+    result = prime * result + (int) (Double.doubleToLongBits(this.distance) ^ (Double.doubleToLongBits(this.distance) >>> 32));
     return result;
   }
 }
