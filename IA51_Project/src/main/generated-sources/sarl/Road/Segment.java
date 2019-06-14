@@ -23,7 +23,9 @@ public class Segment {
   
   public double flow;
   
-  public Segment(final double c, final double tf, final double flow) {
+  public Segment(final Point start, final Point end, final double c, final double tf, final double flow) {
+    this.start = start;
+    this.end = end;
     this.c = c;
     this.tf = tf;
     this.flow = flow;

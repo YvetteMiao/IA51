@@ -15,7 +15,9 @@ class Segment extends Object {
 	public var tf : double
 	public var flow : double
 
-	new(c : double, tf : double, flow : double) {
+	new(start: Point, end: Point, c : double, tf : double, flow : double) {
+		this.start = start
+		this.end = end
 		this.c = c
 		this.tf = tf
 		this.flow = flow
