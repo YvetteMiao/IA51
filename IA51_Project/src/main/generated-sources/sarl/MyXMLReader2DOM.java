@@ -7,7 +7,7 @@ import org.eclipse.xtext.xbase.lib.Exceptions;
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 
-@SarlSpecification("0.8")
+@SarlSpecification("0.9")
 @SarlElementType(10)
 @SuppressWarnings("all")
 public class MyXMLReader2DOM {
